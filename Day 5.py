@@ -1,10 +1,9 @@
-a=input("Do you want to list numbers from 1-10?(y/n)")
+num = 0
 
-while a == "n":
-    print("Please say yes :(")
-    a=input("Do you want to list numbers from 1-10?(y/n)")
+while num<10:
+    num += 1
+    print(num)
 
-print(list(range(1,11)))
 
 a=['Sreerag','Sireesh','Sreedhar','Siddhanth','Sreekumar']
 print(a)
