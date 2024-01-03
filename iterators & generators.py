@@ -1,0 +1,7 @@
+iter_list=iter(["Alpha","Beta","Couta","Donna","Gamma","Erina"])
+print(next(iter_list))
+print(next(iter_list))
+print(next(iter_list))
+print(next(iter_list))
+print(next(iter_list))
+print(next(iter_list))
