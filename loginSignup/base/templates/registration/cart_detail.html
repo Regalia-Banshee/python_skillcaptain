@@ -1,0 +1,25 @@
+{% extends "registration/home.html" %}
+
+{% block title %}Cart{% endblock %}
+
+{% block content %}
+    <h1>Your Cart</h1>
+    {% if cart_items %}
+        <ul>
+            {% for item in cart_items %}
+                <li>
+                    <strong>{{ item.product.title }}</strong> - Quantity: {{ item.quantity }} - Total: ${{ item.total }}
+                    <form method="post" action="{% url 'remove_from_cart' item.product.id %}">
+                        {% csrf_token %}
+                        <button type="submit">Remove</button>
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+        <p><strong>Total Price:</strong> ${{ total_price }}</p>
+        <a href="{% url 'product_list' %}">Continue Shopping</a>
+    {% else %}
+        <p>Your cart is empty.</p>
+        <a href="{% url 'product_list' %}">Continue Shopping</a>
+    {% endif %}
+{% endblock %}

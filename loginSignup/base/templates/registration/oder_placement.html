@@ -1,0 +1,9 @@
+{% extends 'registration/home.html' %}
+{% block content %}
+  <h2>Place Order</h2>
+  <form method="post">
+    {% csrf_token %}
+    <!-- Order placement form fields -->
+    <button type="submit">Place Order</button>
+  </form>
+{% endblock %}

@@ -1,0 +1,78 @@
+/* custom.css */
+
+/* Blue and white color scheme */
+.custom-nav {
+    background-color: #1E88E5; /* Blue color */
+}
+
+.brand-logo {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    color: #FFFFFF !important; /* White color */
+}
+
+.custom-nav ul li a {
+    color: #FFFFFF; /* White color */
+}
+
+.custom-nav ul li a:hover {
+    color: #BBDEFB; /* Lighter blue color */
+}
+
+.custom-main {
+    padding-top: 20px;
+}
+
+.custom-footer {
+    background-color: #1E88E5; /* Blue color */
+}
+
+.custom-footer .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.custom-footer h5, .custom-footer p {
+    font-family: 'Arial', sans-serif;
+}
+
+.custom-footer a {
+    color: #BBDEFB; /* Lighter blue color */
+}
+
+.custom-footer a:hover {
+    color: #FFFFFF; /* White color */
+}
+
+/* Button styles */
+.btn-flat {
+    color: #1E88E5; /* Blue color */
+}
+
+.btn-flat:hover {
+    background-color: #BBDEFB; /* Lighter blue color */
+    color: #FFFFFF; /* White color */
+}
+
+/* Form styles */
+#logout-form button {
+    background: none;
+    border: none;
+    color: #1E88E5; /* Blue color */
+    cursor: pointer;
+}
+
+#logout-form button:hover {
+    color: #BBDEFB; /* Lighter blue color */
+}
+
+/* Additional styling for consistency */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E3F2FD; /* Light blue background */
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+}
